@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.camera.view.PreviewView>
+
+    <ImageButton
+        android:id="@+id/btnCapture"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rec"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Capture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSwitch"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/swap"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Switch"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCapture" />
+
+    <ImageButton
+        android:id="@+id/btnGallery"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/picture"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Gallery"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCapture"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
